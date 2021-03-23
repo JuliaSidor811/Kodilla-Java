@@ -3,6 +3,7 @@ package com.kodilla.stream;
 import com.kodilla.stream.forumuser.ForumUser;
 import com.kodilla.stream.forumuser.Forum;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -25,6 +26,8 @@ public class StreamMain {
         IntStream.range(0, numbers.length)
                 .map(n->numbers[n])
                 .forEach(System.out::println);
+
+
 
 
     }
