@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.strategy.social.UserTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-18T21:40:57" hostname="macbook-air-julia.home" time="0.045">
+  <properties/>
+  <testcase name="testDefaultSharingStrategies()" classname="com.kodilla.patterns.strategy.social.UserTestSuite" time="0.042"/>
+  <testcase name="testIndividualSharingStrategy()" classname="com.kodilla.patterns.strategy.social.UserTestSuite" time="0.001"/>
+  <system-out><![CDATA[Post opublikowano na: Facebook
+Post opublikowano na: Twitter
+Post opublikowano na: Facebook
+Post opublikowano na: Snapchat
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
