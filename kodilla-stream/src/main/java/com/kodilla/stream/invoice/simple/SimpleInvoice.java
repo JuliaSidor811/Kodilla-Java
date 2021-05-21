@@ -13,6 +13,11 @@ public final class SimpleInvoice {
     public boolean removeItem(SimpleItem item){
         return items.remove(item);
     }
+
+    public List<SimpleItem> getItems() {
+        return items;
+    }
+
     public double getValueToPay(){
         return items.stream()
                 .collect(Collectors.summingDouble(SimpleItem::getValue));
