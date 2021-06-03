@@ -1,8 +1,10 @@
 package com.kodillla.hibernate.task.dao;
 
 import com.kodillla.hibernate.task.Task;
+import com.kodillla.hibernate.task.TaskFinancialDetails;
 import org.junit.jupiter.api.Test;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 
@@ -39,5 +41,21 @@ public class TaskDaoTestSuite {
         int id = readTasks.get(0).getId();
         taskDao.deleteById(id);
 
+    }
+    @Test
+    void testTaskDaoSaveWithFinancialDetails() {
+        //Given
+        Task task = new Task(DESCRIPTION, 30);
+        task.setTaskFinancialDetails(new TaskFinancialDetails(new BigDecimal(120), false));
+
+        //When
+        taskDao.save(task);
+        int id = task.getId();
+
+        //Then
+        assertNotEquals(0, id);
+
+        //CleanUp
+        taskDao.deleteById(id);
     }
 }
